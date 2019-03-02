@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="activiti-api" />
+        <module name="consumer-movie" />
+        <module name="eureka-server" />
+        <module name="provider-user" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="consumer-movie-ribbon" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="activiti-api" options="-parameters" />
+      <module name="consumer-movie" options="-parameters" />
+      <module name="consumer-movie-ribbon" options="-parameters" />
+      <module name="demo1" options="-parameters" />
+      <module name="eureka-server" options="-parameters" />
+      <module name="provider-user" options="-parameters" />
+    </option>
+  </component>
+</project>

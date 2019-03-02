@@ -1,0 +1,27 @@
+server:
+  port: 8082
+spring:
+  jpa:
+    show-sql: true
+  application:
+    name: provider-user
+  main:
+    allow-bean-definition-overriding: true
+logging:
+  level:
+    root: INFO
+    org.hibernate: INFO
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+    org.hibernate.type.descriptor.sql.BasicExtractor: TRACE
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: metrics
+eureka:
+  client:
+    service-url:
+      defaultZone: http://peer1:8761/eureka/
